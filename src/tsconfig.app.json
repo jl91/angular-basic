@@ -3,11 +3,20 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
-    "module": "es2015",
-    "types": []
+    "types": [
+      "node",
+      "googlemaps"
+    ],
+    "paths": {
+      "@env/*": [
+        "environments/*"
+      ]
+    }
   },
   "exclude": [
     "test.ts",
-    "**/*.spec.ts"
-  ]
+    "**/*.spec.ts",
+    "node_modules"
+  ],
+  "compileOnSave": true
 }
