@@ -1,1 +1,27 @@
 home.component.html Carregando
+
+
+<table>
+  <thead>
+  <tr>
+    <th>
+      User
+    </th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <ng-container *ngIf="users.length">
+    <tr *ngFor="let user of users">
+      <td>
+        {{ user }}
+      </td>
+    </tr>
+  </ng-container>
+  </tbody>
+
+</table>
+
+
+<app-users (myCustomEvent)="onMyCustomEventDispatch($event)">
+</app-users>

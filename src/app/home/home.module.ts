@@ -3,10 +3,13 @@ import {NgModule} from '@angular/core';
 import {
   HomeComponent
 } from './home.component';
-import {RouterModule} from '@angular/router';
+
+import {UsersComponent} from './users/users.component';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   imports: [
+    CommonModule
     // RouterModule.forRoot([
     //   {
     //     path: '',
@@ -18,7 +21,8 @@ import {RouterModule} from '@angular/router';
     HomeComponent
   ],
   declarations: [
-    HomeComponent
+    HomeComponent,
+    UsersComponent
   ],
   providers: [],
 })
