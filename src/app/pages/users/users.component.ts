@@ -3,7 +3,8 @@ import {User} from '../../shared/model/user.model';
 
 @Component({
   selector: 'app-users',
-  templateUrl: 'users.component.html'
+  templateUrl: 'users.component.html',
+  styleUrls: ['./users.component.scss']
 })
 export class UsersComponent implements OnInit {
   public oddUsers: Array<User> = new Array<User>();
