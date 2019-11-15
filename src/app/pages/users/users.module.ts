@@ -12,7 +12,6 @@ import {AddUsersButtonComponent} from './add-users-button/add-users-button.compo
     UsersRoutingModule
   ],
   exports: [
-    UsersRoutingModule,
     UsersComponent,
   ],
   declarations: [
