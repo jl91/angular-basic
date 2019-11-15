@@ -11,7 +11,7 @@ import {UsersRoutingModule} from './users-routing.module';
     UsersRoutingModule
   ],
   exports: [
-    UsersRoutingModule
+    UsersComponent
   ],
   declarations: [
     UsersComponent

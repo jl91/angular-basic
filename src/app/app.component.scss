@@ -4,10 +4,36 @@ header {
   justify-content: flex-start;
   height: 200px;
   width: 100%;
-  margin: {
-    bottom: 50px;
-  };
   padding: 15px;
+}
+
+nav {
+  display: flex;
+  margin: {
+    bottom: 25px;
+  };
+
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    li {
+      display: inline-flex;
+      justify-content: space-between;
+      padding: 25px;
+      font-size: 25px;
+
+      &:hover {
+        background: #cccccc;
+        cursor: pointer;
+      }
+
+      a {
+        color: blue;
+      }
+    }
+  }
 }
 
 section {

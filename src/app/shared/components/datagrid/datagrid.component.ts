@@ -13,7 +13,7 @@ export class DatagridComponent implements OnInit, AfterViewInit {
   @Input()
   public collection: Array<any>;
 
-  private headers: Array<string>;
+  public headers: Array<string>;
 
   constructor() {
   }
@@ -23,7 +23,8 @@ export class DatagridComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.headers = Object.keys(this.collection[0]);
+    this.headers = this.collection
+    && this.collection[0] ? Object.keys(this.collection[0]) : [];
   }
 
 }

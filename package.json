@@ -1,14 +1,13 @@
 {
   "name": "angular-basic",
   "version": "0.0.0",
-  "license": "MIT",
   "scripts": {
-    "ng": "./node_modules/@angular/cli/bin/ng",
-    "start": "./node_modules/@angular/cli/bin/ng serve --aot",
-    "build": "./node_modules/@angular/cli/bin/ngbuild --prod",
-    "test": "./node_modules/@angular/cli/bin/ng test",
-    "lint": "./node_modules/@angular/cli/bin/ng lint",
-    "e2e": "./node_modules/@angular/cli/bin/ng e2e"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +19,7 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
-    "rxjs": "~6.5.3",
+    "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
@@ -43,6 +42,6 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "3.5.3"
+    "typescript": "~3.5.3"
   }
 }
