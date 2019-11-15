@@ -7,7 +7,6 @@ import {PagesComponent} from './pages.component';
     PagesRountingModule
   ],
   exports: [
-    PagesRountingModule,
     PagesComponent
   ],
   declarations: [
