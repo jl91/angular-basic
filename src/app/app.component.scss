@@ -1,0 +1,32 @@
+header {
+  background: coral;
+  display: flex;
+  justify-content: flex-start;
+  height: 200px;
+  width: 100%;
+  margin: {
+    bottom: 50px;
+  };
+  padding: 15px;
+}
+
+section {
+  width: 100%;
+  min-height: 25vw;
+
+}
+
+footer {
+
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  bottom: 0;
+
+  background: darkgray;
+  border: solid 1px greenyellow;
+  height: 100px;
+  width: 100%;
+  color: white;
+}
+

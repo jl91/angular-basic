@@ -10,9 +10,6 @@ import {Subject} from 'rxjs/Subject';
 })
 export class HomeComponent implements OnInit {
 
-  public oddUsersSubject: Subject<Array<User>> = new Subject<Array<User>>();
-  public evenUsersSubject: Subject<Array<User>> = new Subject<Array<User>>();
-
   public oddUsers: Array<User> = new Array<User>();
   public evenUsers: Array<User> = new Array<User>();
 
@@ -26,12 +23,10 @@ export class HomeComponent implements OnInit {
 
     if (user.id % 2 === 0) {
       this.oddUsers.push(user);
-      return this.oddUsersSubject.next(this.oddUsers);
+      return;
     }
 
     this.evenUsers.push(user);
-    return this.evenUsersSubject.next(this.evenUsers);
-
   }
 
 }

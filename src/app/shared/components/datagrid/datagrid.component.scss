@@ -1,0 +1,16 @@
+table {
+  background: white;
+  width: 100%;
+
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background: #ccc;
+      }
+
+      &:nth-child(odd) {
+        background: darkgray;
+      }
+    }
+  }
+}

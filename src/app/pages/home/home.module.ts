@@ -6,10 +6,13 @@ import {
 
 import {UsersComponent} from './users/users.component';
 import {CommonModule} from '@angular/common';
+import {DatagridComponent} from '../../shared/components/datagrid/datagrid.component';
+import {SharedModule} from '../../shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
     // RouterModule.forRoot([
     //   {
     //     path: '',

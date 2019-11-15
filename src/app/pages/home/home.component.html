@@ -1,0 +1,25 @@
+<app-users (myCustomEvent)="onMyCustomEventDispatch($event)">
+</app-users>
+
+<hr>
+
+<div class="tables-container">
+
+  <div class="table-container">
+
+    <app-datagrid [caption]="'Even Users'"
+                  [collection]="evenUsers"
+                  *ngIf="evenUsers.length"
+    >
+    </app-datagrid>
+  </div>
+
+  <div class="table-container">
+    <app-datagrid [caption]="'Odd Users'"
+                  [collection]="oddUsers"
+                  *ngIf="oddUsers.length"
+    >
+    </app-datagrid>
+  </div>
+
+</div>
