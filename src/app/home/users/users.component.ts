@@ -1,4 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {User} from '../model/user.model';
 
 @Component({
   selector: 'app-users',
@@ -8,7 +9,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class UsersComponent implements OnInit {
 
   @Output()
-  public myCustomEvent: EventEmitter<string> = new EventEmitter<string>();
+  public myCustomEvent: EventEmitter<User> = new EventEmitter<User>();
 
   private counter = 0;
 
@@ -20,7 +21,12 @@ export class UsersComponent implements OnInit {
     e.stopImmediatePropagation();
     e.stopPropagation();
 
-    this.myCustomEvent.emit(`User ${this.counter}`);
+    const user = new User();
+    user.id = this.counter;
+    user.name = `User ${this.counter}`;
+    user.email = `user${user.id}@gmail.com`;
+
+    this.myCustomEvent.emit(user);
     ++this.counter;
   }
 
