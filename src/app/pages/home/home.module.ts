@@ -1,31 +1,28 @@
 import {NgModule} from '@angular/core';
 
-import {
-  HomeComponent
-} from './home.component';
+import {HomeComponent} from './home.component';
 
-import {UsersComponent} from './users/users.component';
+import {AddUsersButtonComponent} from '../users/add-users-button/add-users-button.component';
 import {CommonModule} from '@angular/common';
-import {DatagridComponent} from '../../shared/components/datagrid/datagrid.component';
 import {SharedModule} from '../../shared/shared.module';
+import {RouterModule} from '@angular/router';
+import {HomeRoutingModule} from './home-routing.module';
+
 
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule
-    // RouterModule.forRoot([
-    //   {
-    //     path: '',
-    //     component: HomeComponent,
-    //   }
-    // ])
+    SharedModule,
+    HomeRoutingModule
   ],
   exports: [
-    HomeComponent
+    RouterModule,
+    HomeComponent,
+    HomeRoutingModule
   ],
   declarations: [
     HomeComponent,
-    UsersComponent
+    AddUsersButtonComponent
   ],
   providers: [],
 })

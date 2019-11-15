@@ -1,7 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {User} from './model/user.model';
-import {of} from 'rxjs/observable/of';
-import {Subject} from 'rxjs/Subject';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +7,6 @@ import {Subject} from 'rxjs/Subject';
 })
 export class HomeComponent implements OnInit {
 
-  public oddUsers: Array<User> = new Array<User>();
-  public evenUsers: Array<User> = new Array<User>();
 
   constructor() {
   }
@@ -19,14 +14,5 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  onMyCustomEventDispatch(user: User): void {
-
-    if (user.id % 2 === 0) {
-      this.oddUsers.push(user);
-      return;
-    }
-
-    this.evenUsers.push(user);
-  }
 
 }

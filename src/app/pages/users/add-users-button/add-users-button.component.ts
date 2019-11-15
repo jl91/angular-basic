@@ -1,12 +1,11 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {User} from '../model/user.model';
+import {User} from '../../../shared/model/user.model';
 
 @Component({
   selector: 'app-users',
-  templateUrl: 'users.component.html'
+  templateUrl: 'add-users-button.component.html'
 })
-
-export class UsersComponent implements OnInit {
+export class AddUsersButtonComponent implements OnInit {
 
   @Output()
   public myCustomEvent: EventEmitter<User> = new EventEmitter<User>();
