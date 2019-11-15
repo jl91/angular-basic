@@ -2,7 +2,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {User} from '../../../shared/model/user.model';
 
 @Component({
-  selector: 'app-users',
+  selector: 'app-add-users-button',
   templateUrl: 'add-users-button.component.html'
 })
 export class AddUsersButtonComponent implements OnInit {
